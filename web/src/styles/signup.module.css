@@ -1,0 +1,107 @@
+.firstName {
+  width: 49%;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 66, 105, 0.28);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0 0 24px 0;
+  padding: 0 13px;
+  color: rgba(0, 32, 51, 0.35);
+}
+
+.email-input {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #ff9916;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0 0 25px 0;
+  padding: 0 13px;
+}
+
+.innerContainer {
+  position: relative;
+}
+
+.modalClose {
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.sideBarOpen {
+  display: none;
+}
+.select {
+  display: inline;
+  align-items: center;
+  padding: 0px 13px;
+  position: relative;
+  height: 48px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #282828a3;
+  background: #ffffff;
+  border: 1px solid #ff9916;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.sideBarClose {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .sideBarOpen {
+    display: block;
+    font-size: 30px;
+    margin: 15px 0px 0px 32px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modalClose {
+    font-size: 20px;
+    right: 10px;
+    top: 10px;
+  }
+}
+.email-input {
+  width: 100%;
+}
+
+.input-error {
+  border-color: #e63946;
+}
+
+.error {
+  color: #eb3333;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  margin: 0px 0 0 4px;
+}
+
+.disabled-btn {
+  cursor: not-allowed;
+}
+
+.cancel {
+  cursor: pointer;
+  margin: 0 0 0 10px;
+  transition: all 0.1s ease-in-out;
+}
+.cancel:hover {
+  transform: translateY(-1px);
+}

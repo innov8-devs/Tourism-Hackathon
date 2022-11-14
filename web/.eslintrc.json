@@ -1,0 +1,32 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "eslint:recommended"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ],
+    "import/no-unresolved": 1,
+    "react-hooks/exhaustive-deps": 1,
+    "prefer-const": "error",
+    "no-console": "error",
+    "no-duplicate-imports": "error",
+    "no-self-compare": "error",
+    "no-template-curly-in-string": "error",
+    "no-use-before-define": "off"
+  },
+  "globals": {
+    "JSX": "readonly"
+  }
+}

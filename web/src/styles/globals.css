@@ -1,0 +1,246 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.signOutModal {
+  display: block;
+}
+
+.mobileNav-menu {
+  background-color: #fefefe;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0 20px 20px;
+  /* display: flex;
+  justify-content: space-between; */
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 0.3s;
+}
+
+.mobileNav-menu.active {
+  left: 0;
+  transition: 350ms;
+  z-index: 200;
+}
+
+.mobileNav-text a {
+  color: #000000;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  cursor: pointer;
+  padding: 5px;
+  padding-right: 50px;
+}
+
+.mobileNav-text a:hover {
+  background-color: #fff7e7;
+  width: 100%;
+}
+
+.carousel .control-dots .dot {
+  background: #ff9916 !important;
+}
+
+:root {
+  --toastify-icon-color-success: #14903f !important;
+  --toastify-icon-color-error: #d0342c !important;
+}
+
+.Toastify__toast--success {
+  background: #fff !important;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.Toastify__toast--error {
+  background: #fff !important;
+}
+.Toastify__toast-body {
+  font-family: 'Atlas Grotesk Web', Arial, Helvetica, sans-serif;
+  color: #000;
+  font-size: 0.875rem !important;
+}
+.Toastify__toast--success .Toastify__toast-body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 100%;
+  background-color: #14903f;
+}
+.Toastify__toast--error .Toastify__toast-body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 100%;
+  background-color: #d0342c;
+}
+.Toastify__progress-bar {
+  background: transparent !important;
+}
+
+.ql-toolbar {
+  display: none;
+}
+
+#editor > .quill > .ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: 1px solid rgba(0, 66, 105, 0.28);
+}
+
+.quill {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.ql-container .ql-editor.ql-blank::before {
+  width: 550px;
+  height: 56px;
+  margin: 0;
+  position: absolute;
+  font-size: 16px;
+}
+
+.ql-editor {
+  overflow-x: hidden;
+}
+
+.ql-editor > p {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+}
+
+.quill .ql-editor > p a {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+.ql-mention-list-item.disabled {
+  padding: 5px;
+  background: #cccccc;
+  line-height: 20px;
+}
+
+/* #quill-mention-list {
+  background: #fff;
+  box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+  width: 300px;
+  list-style: none;
+  maxheight: 280px;
+}
+
+#quill-mention-list li {
+  padding: 10px;
+}
+
+#quill-mention-list li:hover {
+  padding: 10px;
+  background: #e6e6e6;
+} */
+
+.cropper-container {
+  height: 350px !important;
+}
+
+.facebook-login {
+  font-family: montserrat;
+  height: 48px;
+  width: 100%;
+  margin: 32px 0 0 0;
+  z-index: 4;
+  background: #4c69ba;
+
+  border-radius: 8px;
+  padding: 0 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+  &:disabled {
+    cursor: pointer;
+    box-shadow: none;
+    color: rgb(255, 255, 255) !important;
+
+    &:hover,
+    &:focus {
+      cursor: not-allowed;
+    }
+  }
+  width: 100%;
+}
+
+.google-login {
+  font-family: montserrat;
+  height: 48px;
+  width: 50%;
+  margin: 32px 0 0 0;
+  z-index: 4;
+  background: #fff;
+  color: #000;
+  box-shadow: 0px 8px 20px 0.9px rgba(0, 0, 0, 0.12);
+
+  border-radius: 8px;
+  padding: 0 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+  &:disabled {
+    cursor: pointer;
+    box-shadow: none;
+    color: rgb(255, 255, 255) !important;
+
+    &:hover,
+    &:focus {
+      cursor: not-allowed;
+    }
+  }
+  width: 100%;
+}
